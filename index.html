@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Designer de cílios | Maria Heloisa</title>
+  <meta name="description"
+    content="Extensão de cílios em [cidade/bairro] com técnica personalizada para o formato do seu olho. Agende pelo WhatsApp.">
+  <meta property="og:title" content="[Nome] | Designer de cílios">
+  <meta property="og:description" content="Olhar marcante, sem esforço todo dia. Agende seu horário.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Figtree:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+
+  <!-- 1. HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand">Maria Heloisa</div>
+      <div class="hero-grid">
+        <div>
+          <h1>Realce o seu olhar. Valorize a sua beleza.</h1>
+          <p>Extensão de cílios pensada para combinar com o seu estilo e deixar o olhar mais marcante, delicado e
+            natural.</p>
+          <a class="btn" data-wa href="#">Agendar pelo WhatsApp</a>
+        </div>
+        <!-- Troque o conteúdo por: <img src="hero.jpg" alt="Olhar com extensão de cílios"> -->
+        <div class="hero-photo" role="img" aria-label="Foto de destaque de um trabalho">
+          <svg class="lashes" viewBox="0 0 300 90" aria-hidden="true">
+            <g id="lg"></g>
+          </svg>
+          <img src="assets/imgs/trabalho-hero.avif" alt="Foto de um dos trabalhos">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. SOBRE -->
+  <section class="about" id="sobre">
+    <div class="wrap about-grid">
+      <img src="assets/imgs/sobremim.avif" alt="Foto da profissional">
+      <div>
+        <h2>Oi, eu sou a Maria Heloisa!</h2>
+        <p class="lead">Sou designer de cílios há [X] anos e meu objetivo é valorizar o seu olhar com naturalidade,
+          conforto e segurança. Cada design é pensado de acordo com o seu rosto e o seu estilo.</p>
+        <ul class="chips">
+          <li>Biossegurança</li>
+          <li>Produtos de qualidade</li>
+          <li>Atendimento individual</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVIÇOS -->
+  <section id="servicos">
+    <div class="wrap">
+      <h2>Serviços e valores</h2>
+      <p class="lead">Escolha o efeito que combina com você. Na dúvida, eu indico no atendimento.</p>
+      <div class="services">
+        <div class="service">
+          <h3>Clássico (fio a fio)</h3><span class="price">R$ [000]</span>
+          <p>Efeito natural, parecido com rímel.</p><span class="time">cerca de [2h]</span>
+        </div>
+        <div class="service">
+          <h3>Volume russo / brasileiro</h3><span class="price">R$ [000]</span>
+          <p>Mais densidade e preenchimento.</p><span class="time">cerca de [2h30]</span>
+        </div>
+        <div class="service">
+          <h3>Híbrido</h3><span class="price">R$ [000]</span>
+          <p>Mistura de fio a fio e volume, com textura leve.</p><span class="time">cerca de [2h]</span>
+        </div>
+        <div class="service">
+          <h3>Manutenção</h3><span class="price">R$ [000]</span>
+          <p>A cada 15 a 20 dias para manter o efeito.</p><span class="time">cerca de [1h30]</span>
+        </div>
+        <div class="service">
+          <h3>Remoção</h3><span class="price">R$ [000]</span>
+          <p>Retirada segura, sem danificar o cílio natural.</p><span class="time">cerca de [40 min]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PORTFÓLIO -->
+  <section id="portfolio" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="center">Resultados reais</h2>
+      <div class="filters" role="group" aria-label="Filtrar por estilo">
+        <button aria-pressed="true" data-f="todos">Todos</button>
+        <button aria-pressed="false" data-f="classico">Clássico</button>
+        <button aria-pressed="false" data-f="volume">Volume</button>
+        <button aria-pressed="false" data-f="hibrido">Híbrido</button>
+      </div>
+      <!-- Troque cada texto por: <img src="foto.jpg" alt="Descrição" loading="lazy"> -->
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- 5. ANTES E DEPOIS -->
+  <section class="ba" id="antes-depois">
+    <div class="wrap center">
+      <h2>Cada olhar é único. Veja a transformação.</h2>
+      <p class="lead">Arraste para comparar. Fotos publicadas com autorização das clientes.</p>
+      <div class="compare" id="compare">
+        <!-- Coloque <img> dentro de cada .layer -->
+        <div class="layer before"><span>Antes</span></div>
+        <div class="layer after" id="after"><span>Depois</span></div>
+        <div class="handle" id="handle"></div>
+        <input type="range" min="0" max="100" value="50" id="range" aria-label="Comparar antes e depois">
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. COMO FUNCIONA -->
+  <section id="atendimento">
+    <div class="wrap">
+      <h2>Como funciona o atendimento</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>Avaliação</h3>
+          <p>Conversamos sobre o efeito que você deseja.</p>
+        </div>
+        <div class="step">
+          <h3>Preparação</h3>
+          <p>Higienização e proteção da pele.</p>
+        </div>
+        <div class="step">
+          <h3>Aplicação</h3>
+          <p>Fio a fio, com conforto e cuidado.</p>
+        </div>
+        <div class="step">
+          <h3>Orientações</h3>
+          <p>Você sai sabendo como cuidar dos seus cílios.</p>
+        </div>
+      </div>
+      <p class="meta">Duração média da sessão: [2 horas]. Pode relaxar, muitas clientes dormem.</p>
+    </div>
+  </section>
+
+  <!-- 7. DEPOIMENTOS -->
+  <section class="quotes" id="depoimentos">
+    <div class="wrap">
+      <h2>O que minhas clientes dizem</h2>
+      <div class="qgrid">
+        <blockquote>
+          <p>Amei o resultado! Ficou natural e dura muito mais do que eu imaginava.</p>
+          <footer>[Nome da cliente]</footer>
+        </blockquote>
+        <blockquote>
+          <p>Atendimento super cuidadoso e o ambiente é muito acolhedor. Já marquei a manutenção.</p>
+          <footer>[Nome da cliente]</footer>
+        </blockquote>
+        <blockquote>
+          <p>Tenho olho sensível e ela me explicou tudo antes. Me senti segura do início ao fim.</p>
+          <footer>[Nome da cliente]</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FAQ -->
+  <section id="duvidas">
+    <div class="wrap">
+      <h2 class="center">Perguntas frequentes</h2>
+      <div class="faq">
+        <details>
+          <summary>Dói?</summary>
+          <p>Não. A maioria das clientes relaxa e até dorme durante a aplicação.</p>
+        </details>
+        <details>
+          <summary>Quanto tempo duram?</summary>
+          <p>Em média 3 a 4 semanas, com manutenção a cada 15 a 20 dias.</p>
+        </details>
+        <details>
+          <summary>Pode molhar?</summary>
+          <p>Sim, após [24 horas] da aplicação. Passo todas as orientações no atendimento.</p>
+        </details>
+        <details>
+          <summary>Estraga o cílio natural?</summary>
+          <p>Não, quando a aplicação e a remoção são feitas corretamente.</p>
+        </details>
+        <details>
+          <summary>Tenho alergia, posso fazer?</summary>
+          <p>Converse comigo antes para avaliarmos o seu caso.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. INFORMAÇÕES PRÁTICAS -->
+  <section class="info" id="info">
+    <div class="wrap">
+      <h2>Informações práticas</h2>
+      <div class="info-grid">
+        <dl>
+          <dt>Endereço</dt>
+          <dd>[Rua, número, bairro, cidade]</dd>
+          <dt>Horário de atendimento</dt>
+          <dd>[Segunda a sábado, 9h às 18h]</dd>
+          <dt>Pagamento</dt>
+          <dd>[Pix, cartão de débito e crédito, dinheiro]</dd>
+          <dt>Reserva e remarcação</dt>
+          <dd>Reserva com sinal de [R$ 00]. Remarcações com até [24] horas de antecedência. Tolerância de atraso de [15]
+            minutos.</dd>
+        </dl>
+        <!-- Cole aqui o iframe do Google Maps (Compartilhar > Incorporar um mapa) -->
+        <div class="map">Mapa do local</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. CHAMADA FINAL -->
+  <section class="final" id="agendar">
+    <div class="wrap">
+      <h2>Pronta para renovar seu olhar?</h2>
+      <a class="btn" data-wa href="#">Agendar meu horário</a>
+      <p style="margin-top:20px"><a href="https://instagram.com/[usuario]" rel="noopener">Ver mais trabalhos no
+          Instagram</a></p>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">© <span id="y"></span> [Nome]. Designer de cílios em [cidade/bairro].</div>
+  </footer>
+
+  <a class="fab" data-wa href="#" aria-label="Chamar no WhatsApp">WhatsApp</a>
+
+  <script>
+    /* ===== CONFIGURE AQUI ===== */
+    const WHATSAPP = "5511999999999"; // 55 + DDD + número, só dígitos
+    const MSG = "Olá! Vim pelo site e quero agendar um horário.";
+
+    document.querySelectorAll("[data-wa]").forEach(a => {
+      a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MSG);
+      a.target = "_blank"; a.rel = "noopener";
+    });
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    /* Cílios do hero (SVG gerado) */
+    (function () {
+      const g = document.getElementById("lg"); const n = 13; let h = "";
+      for (let i = 0; i < n; i++) {
+        const t = i / (n - 1), x = 20 + t * 260;
+        const len = 38 + Math.sin(t * Math.PI) * 34;
+        const lean = (t - .5) * 70;
+        h += `<path style="--i:${i}" d="M${x} 6 Q ${x + lean * .4} ${6 + len * .5} ${x + lean} ${6 + len}"/>`;
+      }
+      g.innerHTML = h;
+    })();
+
+    /* Portfólio com filtro (troque 'cor' por fotos reais) */
+    const works = [
+      ["classico", "Clássico", "#d98aa0", "#a8506a"], ["volume", "Volume", "#c2607c", "#7d2c45"],
+      ["hibrido", "Híbrido", "#e0a3b3", "#b05a74"], ["classico", "Clássico", "#cf8da0", "#94475f"],
+      ["volume", "Volume", "#b9577a", "#6f2742"], ["hibrido", "Híbrido", "#d79bb0", "#a04d69"],
+      ["classico", "Clássico", "#e3b0bd", "#b86b82"], ["volume", "Volume", "#c76c88", "#862f4b"]
+    ];
+    const grid = document.getElementById("grid");
+    grid.innerHTML = works.map(w => `<div class="tile" data-s="${w[0]}" style="--c1:${w[2]};--c2:${w[3]}">${w[1]}</div>`).join("");
+    document.querySelectorAll(".filters button").forEach(b => {
+      b.addEventListener("click", () => {
+        document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", "false"));
+        b.setAttribute("aria-pressed", "true");
+        grid.querySelectorAll(".tile").forEach(t => { t.hidden = b.dataset.f !== "todos" && t.dataset.s !== b.dataset.f; });
+      });
+    });
+
+    /* Antes e depois */
+    const range = document.getElementById("range"), after = document.getElementById("after"), handle = document.getElementById("handle");
+    function setPos() { after.style.clipPath = `inset(0 0 0 ${range.value}%)`; handle.style.left = range.value + "%"; }
+    range.addEventListener("input", setPos); setPos();
+  </script>
+</body>
+
+</html>
